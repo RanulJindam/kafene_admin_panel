@@ -54,7 +54,7 @@ function filterOptions() {
 }
 
 $(".check-boxes").on("change", function () {
-    filterOptions(orderData);
+    filterOptions();
 });
 
 
