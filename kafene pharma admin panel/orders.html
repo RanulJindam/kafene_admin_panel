@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene pharma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="title">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+                <p>kafene</p>
+            </div>
+            <div class="pages">
+                <a href="./orders.html" id="active-nav">Orders</a>
+                <a href="./products.html">Products</a>
+                <a href="./users.html">Users</a>
+            </div>
+            <button id="logout">Logout</button>
+        </div>
+    </nav>
+
+    <div class="orders-body">
+        <h1>Orders</h1>
+        <div class="content-wrapper">
+            <div class="filter">
+                <h3>Filters</h3>
+                <p id="count">Count : 100</p>
+                <label>
+                    <input type="checkbox" class="check-boxes" id="check-0" name="New" checked> New
+                </label>
+                <label>
+                    <input type="checkbox" class="check-boxes" id="check-1" name="Packed" checked> Packed
+                </label>
+                <label>
+                    <input type="checkbox" class="check-boxes"  id="check-2" name="InTransit" checked> InTransit
+                </label>
+                <label>
+                    <input type="checkbox" class="check-boxes"  id="check-3" name="Delivered" checked> Delivered
+                </label>
+            </div>
+            <div class="orders-table-section">
+                <table class="orders-table">
+                     <tr>
+                        <th>Id</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                    <tbody id="table-data"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="orders.js"></script>
+</body>
+</html>

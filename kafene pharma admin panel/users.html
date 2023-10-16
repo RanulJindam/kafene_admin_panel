@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene pharma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="title">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+                <p>kafene</p>
+            </div>
+            <div class="pages">
+                <a href="./orders.html" >Orders</a>
+                <a href="./products.html">Products</a>
+                <a href="./users.html" id="active-nav">Users</a>
+            </div>
+            <button id="logout">Logout</button>
+        </div>
+    </nav>
+    <div class="user-body">
+        <div class="search-bar">
+            <h1>Users</h1>
+            <div class="inner-div">
+                <input type="text" placeholder="Search by Name" id="search-user">
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <table class="user-table">
+            <tr class="user-table-heading">
+                <th>ID</th>
+                <th>User Avatar</th>
+                <th>FullName</th>
+                <th>DoB</th>
+                <th>Gender</th>
+                <th>Current Location</th>
+            </tr>
+            <tbody id="table-data"></tbody>
+        </table>
+    </div>
+
+    <script src="users.js"></script>
+</body>
+</html>
